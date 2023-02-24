@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+
+  &__menuInverted {
+    display: none;
+  }
+
+  &__addMovie {
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    margin-left: 4rem;
+    cursor: pointer;
+
+    img {
+      margin-right: 0.3rem;
+      cursor: pointer;
+    }
+  }
+
+  &__icons {
+    .icons {
+      cursor: pointer;
+    }
+
+    &__menu,
+    &__notif {
+      margin-right: 2.5rem;
+    }
+
+    &__profile {
+      width: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    padding: 1.5rem;
+
+    &__menuInverted {
+      display: initial;
+    }
+
+    &__addMovie {
+      display: none;
+    }
+
+    &__icons {
+      &__menu,
+      &__notif {
+        display: none;
+      }
+    }
+  }
+}

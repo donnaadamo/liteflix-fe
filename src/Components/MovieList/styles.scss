@@ -1,0 +1,47 @@
+.movielist {
+  min-height: 47.625rem;
+  min-width: 13.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__choose {
+    justify-content: center;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    margin: 3rem 0 1rem 0;
+
+    &__watch {
+      margin-right: 0.4rem;
+    }
+
+    &__popular {
+      font-weight: bold;
+      cursor: pointer;
+
+      img {
+        margin-left: 0.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .movielist {
+    &__choose {
+      margin: initial;
+      margin-bottom: 1.688rem;
+    }
+  }
+}
+
+@media only screen and (min-height: 920px) {
+  .movielist {
+    min-height: 55rem;
+
+    &__choose {
+      margin: 8rem 0 2rem 0;
+    }
+  }
+}

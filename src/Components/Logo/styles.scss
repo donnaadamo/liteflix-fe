@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  color: $aqua;
+  font-size: 2.125rem;
+  line-height: 2.125rem;
+
+  &__lite {
+    font-weight: bold;
+  }
+}

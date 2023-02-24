@@ -1,0 +1,98 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+
+  &__outstanding {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 4rem;
+
+    &__original {
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+      white-space: pre;
+      margin-left: 0.3rem;
+
+      &__right {
+        font-weight: bold;
+      }
+    }
+
+    &__title {
+      color: $aqua;
+      font-weight: bold;
+      font-size: 7.5rem;
+      line-height: 6.25rem;
+      letter-spacing: 1rem;
+      margin: 1.5rem 0 2rem 0;
+    }
+
+    &__buttons {
+      &__play,
+      &__mylist {
+        width: 15.5rem;
+        height: 3.5rem;
+        color: $white;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        margin-bottom: 2rem;
+
+        img {
+          cursor: pointer;
+          margin-right: 0.3rem;
+        }
+      }
+
+      &__play {
+        background: $black;
+        border: none;
+        margin: 0 1.2rem 0 0.3rem;
+      }
+
+      &__mylist {
+        background: $button-primary-bg;
+        border: 1px solid $button-primary-border;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+
+    &__outstanding {
+      &__original {
+        align-self: center;
+        margin-top: 13.375rem;
+      }
+
+      &__title {
+        font-size: 4.75rem;
+        text-align: center;
+        justify-content: center;
+        line-height: 4.875rem;
+        letter-spacing: 0.75rem;
+      }
+
+      &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__play {
+          background: $black;
+          border: none;
+          margin: initial;
+          margin-bottom: 1rem;
+        }
+
+        &__mylist {
+          margin: initial;
+        }
+      }
+    }
+  }
+}

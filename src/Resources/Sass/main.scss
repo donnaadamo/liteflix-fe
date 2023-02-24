@@ -1,0 +1,16 @@
+@import "./colors.scss";
+
+/* Components */
+
+@import "../../Components/Header/styles.scss";
+@import "../../Components/Movie/styles.scss";
+@import "../../Components/Menu/styles.scss";
+@import "../../Components/MovieList/styles.scss";
+@import "../../Components/Dropdown/styles.scss";
+@import "../../Components/AddMovie/styles.scss";
+@import "../../Components/FilesInput/styles.scss";
+@import "../../Components/Logo/styles.scss";
+
+/* Containers */
+
+@import "../../Containers/Home/styles.scss";

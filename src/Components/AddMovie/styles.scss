@@ -1,0 +1,161 @@
+.addmovie {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $button-secondary-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+
+  &__content {
+    width: 45.625rem;
+    height: 27.5rem;
+    background: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+      align-self: flex-end;
+      padding: 1.5rem 1.5rem 0.568rem 1.5rem;
+
+      img {
+        cursor: pointer;
+      }
+
+      &__menu,
+      &__logo,
+      &__profile {
+        display: none;
+      }
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 18.125rem;
+
+      &__title {
+        align-items: center;
+        color: $aqua;
+        font-weight: bold;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        margin-bottom: 3rem;
+      }
+
+      &__congrats {
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 1.625rem;
+        margin-top: 4rem;
+      }
+
+      &__uploaded {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+      }
+    }
+
+    &__button {
+      background: #ffffff;
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+      color: $black;
+      width: 15.5rem;
+      height: 3.5rem;
+      border: none;
+      opacity: 0.5;
+
+      &__upload {
+        opacity: initial;
+        cursor: pointer;
+      }
+
+      &__exit {
+        display: none;
+      }
+    }
+
+    input {
+      color: $white;
+      cursor: auto;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #ffffff;
+      text-align: center;
+      margin-top: 3rem;
+      width: 15.5rem;
+      font-size: 1rem;
+      line-height: 1.188rem;
+      padding: 0.5rem;
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+
+    input:focus::placeholder {
+      color: transparent;
+    }
+
+    textarea:focus,
+    input:focus {
+      outline: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .addmovie {
+    &__content {
+      height: -webkit-fill-available;
+
+      &__body {
+        margin-top: 4rem;
+        min-height: 25rem;
+
+        &__logo {
+          display: none;
+        }
+      }
+
+      &__button {
+        &__exit {
+          display: initial;
+          opacity: initial;
+          background: $button-primary-bg;
+          border: 1px solid $button-primary-border;
+          color: $white;
+          margin-top: 1.5rem;
+        }
+
+        &__hidden {
+          display: none;
+        }
+      }
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-self: normal;
+
+        &__menu,
+        &__logo,
+        &__profile {
+          display: initial;
+        }
+
+        &__close {
+          display: none;
+        }
+      }
+    }
+  }
+}
