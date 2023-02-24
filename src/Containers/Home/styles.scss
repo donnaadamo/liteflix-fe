@@ -75,7 +75,11 @@
         justify-content: center;
         line-height: 4.875rem;
         letter-spacing: 0.75rem;
-        word-break: break-all;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+
+        -ms-word-break: break-word;
+        word-break: break-word;
       }
 
       &__buttons {
