@@ -83,3 +83,13 @@
     }
   }
 }
+
+@media only screen and (max-height: 684px) {
+  .menu {
+    &__content {
+      &__list {
+        margin-top: 2.313rem;
+      }
+    }
+  }
+}
