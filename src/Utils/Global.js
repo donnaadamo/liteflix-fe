@@ -50,7 +50,7 @@ const GLOBAL = {
     IMAGES: "images/",
     API_KEY: "6f26fd536dd6192ec8a57e94141f8b20",
     THE_MOVIE_DB: "https://api.themoviedb.org/3/movie/",
-    MY_MOVIES_DB: "http://localhost:4000/",
+    MY_MOVIES_DB: "https://liteflix-be-dsa.herokuapp.com/",
   },
 };
 
