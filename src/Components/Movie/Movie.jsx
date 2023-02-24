@@ -29,7 +29,7 @@ const Movie = ({ picture, title, voteAverage, releaseDate, selected }) => {
       {selected === GLOBAL.DROPDOWN.POPULAR && (
         <div className="movie__info">
           <div>
-            <img src="icons/star.svg" alt="star" /> {voteAverage}
+            <img src="icons/starAqua.svg" alt="star" /> {voteAverage}
           </div>
           <div>{year}</div>
         </div>
