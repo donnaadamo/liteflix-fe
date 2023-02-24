@@ -117,29 +117,3 @@ const AddMovie = ({ handleToggleAddMovie }) => {
 };
 
 export default AddMovie;
-
-/*
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [progress, setProgress] = useState(0);
-
-  const uploadMovie = () => {
-    const formData = new FormData();
-    formData.append("original_title", title);
-    formData.append("img", image);
-    executePost({
-      data: formData,
-      onUploadProgress: (progressEvent) => {
-        const progress = (progressEvent.loaded / progressEvent.total) * 50;
-        setProgress(progress);
-      },
-      onDownloadProgress: (progressEvent) => {
-        const progress = 50 + (progressEvent.loaded / progressEvent.total) * 50;
-        console.log(progress);
-        setProgress(progress);
-      },
-    });
-    setProgress(100);
-    setIsSuccess(true);
-  };
-
-  */
